@@ -55,17 +55,17 @@ var characterOneYearlyExpenses = characterOneExpenses * 12;
 // make a variable called `characterOneYearlySavings` and assign it to be what remains of character one's salary after removing both the yearly rent and the yearly expenses
 // hint: much like in math, you can use parenthesis to define order of operations
 
-var characterOneSavings = characterOneSalary - (characterOneYearlyRent + characterOneYearlyExpenses);
+var characterOneYearlySavings = characterOneSalary - (characterOneYearlyRent + characterOneYearlyExpenses);
 
 // Character Two
 
 // make a variable called `characterOneName` and assign it to be a string of "Mr. Snuggles"
 
-var characterOneName = "Mr. Snuggles";
+var characterTwoName = "Mr. Snuggles";
 
 // make a new variable ``characterOneAge`` and assign it to be the number 8
 
-var characterOneAge = 8;
+var characterTwoAge = 8;
 
 // make a variable called `characterTwoProfession` and assign it a value of "Accountant"
 
@@ -158,7 +158,11 @@ if (characterOneAge > characterTwoAge) {
     
 // Else, console log "Local Friends!"
 
-
+if (characterOneLocation === "San Francisco" && characterTwoLocation === "New York") {
+    console.log("Cross Country Friends!");
+} else {
+    console.log("Local Friends!");
+}
 
 
 // Create an if statement to check if `characterOneYearlySavings` is greater than `characterTwoYearlySavings`
@@ -169,7 +173,11 @@ if (characterOneAge > characterTwoAge) {
     
 // Else, console log `characterTwoName` prepended to the string " is a high roller!"
 
-
+if (characterOneYearlySavings > characterTwoYearlySavings) {
+    console.log(characterOneName + " is a high roller!");
+} else {
+    console.log(characterTwoName + " is a high roller!");
+}
 
 
 // Create an if statement to check if `characterOneProfession` is equal to "Web Developer" or if `characterTwoProfession` is equal to "Data Analyst"
@@ -183,5 +191,9 @@ if (characterOneAge > characterTwoAge) {
 // Else, console log "Aww, I wanted to meet someone in tech :("
 
 
-
+if (characterOneProfession === "Web Developer" || characterTwoProfession === "Data Analyst") {
+    console.log("Hey look! One of them is in the tech industry!");
+} else {
+    console.log("Aww, I wanted to meet someone in tech :(");
+}
 
