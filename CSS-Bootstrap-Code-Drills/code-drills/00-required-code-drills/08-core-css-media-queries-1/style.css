@@ -88,8 +88,13 @@ Therefore, we want our media queries in descending order, so that the most recen
   html {
     font-size: 55%;
   }
-  body {
-    color: blue
+  h1 {
+    color: blue;
+  }
+  .about__box--center {
+    background-color: red;
+    color: white;
+    border: solid 5px purple;
   }
 
   
