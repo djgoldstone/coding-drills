@@ -5,61 +5,79 @@
 
 // make a variable called `characterOneName` and assign it to be a string of "Mr. Farley"
 
+var characterOneName = "Mr. Farley";
+
 
 // assign a new value "Ms. Farley" to the variable `characterOneName`
 
+characterOneName = "Ms. Farley";
 
 // make a new variable `characterOneAge` and assign it an age of your choice
 
+var characterOneAge = 25;
 
 // reassign the variable `characterOneAge` to be the integer 6
 
+characterOneAge = 6;
 
 // make a variable called `characterOneSalary` and assign it to be the number 100000.00
 
+characterOneSalary = 100000.00;
 
 // make a variable called `characterOneProfession` and assign it a value of "Web Developer"
 
+var characterOneProfession = "Web Developer";
 
 // make a variable called `characterOneSpecies` and assign it a value of "cat"
 
+var characterOneSpecies = "cat";
 
 // make a variable called `characterOneLocation` and assign it a value of "San Francisco, CA"
 
+var characterOneLocation = "San Francisco, CA";
 
 // make a variable called `characterOneRent` and assign it to be the number 2000.00
 
+var characterOneRent = 2000.00;
 
 // make a variable called `characterOneExpenses` and assign it to be the number 1500.00
 
+var characterOneExpenses = 1500.00;
 
 // make a variable called `characterOneYearlyRent` and assign it to be 12 times `characterOneRent`
 
+var characterOneYearlyRent = characterOneRent * 12;
 
 // make a variable called `characterOneYearlyExpenses` and assign it to be 12 times `characterOneExpenses`
 
+var characterOneYearlyExpenses = characterOneExpenses * 12;
 
 // make a variable called `characterOneYearlySavings` and assign it to be what remains of character one's salary after removing both the yearly rent and the yearly expenses
 // hint: much like in math, you can use parenthesis to define order of operations
 
-
+var characterOneSavings = characterOneSalary - (characterOneYearlyRent + characterOneYearlyExpenses);
 
 // Character Two
 
 // make a variable called `characterOneName` and assign it to be a string of "Mr. Snuggles"
 
+var characterOneName = "Mr. Snuggles";
 
 // make a new variable ``characterOneAge`` and assign it to be the number 8
 
+var characterOneAge = 8;
 
 // make a variable called `characterTwoProfession` and assign it a value of "Accountant"
 
+var characterTwoProfession = "Accountant";
 
 // make a variable called `characterTwoSpecies` and assign it a value of "mouse"
 
+var characterTwoSpecies = "mouse";
 
 // make a variable called `characterTwoLocation` and assign it a value of "Oakland, CA"
 
+var characterTwoLocation = "Oakland, CA";
 
 // make a variable called characterTwoRent and assign it to be the number 4000.00
 
