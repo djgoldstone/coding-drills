@@ -134,3 +134,41 @@ meaning that any code commented out is ignored.
 
 //console log statementFour
 
+//strings:
+var subject = "Programmers";
+var firstName = "Ada";
+var lastName = "Lovelace";
+var fullName = firstName + " " + lastName;
+var profession = "Computer Programmer";
+var knownFor = "first computer programmer";
+var firstAlgorithm = "Analytical Engine";
+var cityLocation = "London";
+var countryLocation = "England";
+var nationality = "British";
+
+//integers:
+var birthYear = 1815;
+var deathYear = 1852;
+var ageAtPassing = deathYear - birthYear;
+var yearOfPublish = 1842;
+var ageOfYearAtPublish = yearOfPublish - birthYear;
+
+//console.log():
+console.log("First name: " + firstName);
+console.log("Last name: " + lastName);
+console.log("Profession: " + profession);
+console.log("Birth year: " + birthYear);
+
+//concat values:
+var statementOne = subject + ": " + fullName + " is a " + nationality + " " + profession + " born in " + birthYear + ".";
+
+var statementTwo = "She is commonly referred to as the " + knownFor;
+
+var statementThree = "In " + yearOfPublish + " she published " + "the first Algorithm, the " + firstAlgorithm + ", at the age of " + ageOfYearAtPublish;
+
+var statementFour = "She was a " + nationality + " citizen who lived in " + cityLocation + ", " + countryLocation + " until her passing in " + deathYear + " at the age of " + ageAtPassing + ".";
+
+console.log(statementOne);
+console.log(statementTwo);
+console.log(statementThree);
+console.log(statementFour);
