@@ -106,7 +106,18 @@ Therefore, we want our media queries in descending order, so that the most recen
   html {
     font-size: 45%;
 }
-
+  h1 {
+    color: purple;
+  }
+  .btn {
+    background-color: red;
+  }
+  .about__box--center {
+    background-color: yellow;
+    color: black;
+    border: solid 10px green;
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
