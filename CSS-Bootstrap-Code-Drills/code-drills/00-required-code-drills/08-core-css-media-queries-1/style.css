@@ -110,13 +110,30 @@ Therefore, we want our media queries in descending order, so that the most recen
     color: purple;
   }
   .btn {
+    position: absolute;
     background-color: red;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 8rem;
+    padding: 5px; ;
+  }
+  .btn:hover {
+    transform: translateX(-50%) translateY(-1px);
+    background-color: green;
+  }
+
+  .btn:active,
+  .btn:focus {
+    transform: translateX(-50%) translateY(1px);
   }
   .about__box--center {
     background-color: yellow;
     color: black;
     border: solid 10px green;
     width: 90%;
+  }
+  .heading-sub {
+    display: block;
   }
 }
 
