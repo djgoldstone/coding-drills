@@ -139,8 +139,14 @@ Therefore, we want our media queries in descending order, so that the most recen
 
 @media (max-width: 600px) {
   html {
-    background-image: linear-gradient(red, purple);
+    background-image: linear-gradient(to right bottom, red, blue);
 
+}
+body {
+  font-family: fantasy;
+}
+.heading-primary {
+  color: white;
 }
   /* For the colorful background, look up setting a background-image to a linear gradient in css */
 
