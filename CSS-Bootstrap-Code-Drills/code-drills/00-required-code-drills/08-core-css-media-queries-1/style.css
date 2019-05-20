@@ -88,6 +88,9 @@ Therefore, we want our media queries in descending order, so that the most recen
   html {
     font-size: 55%;
   }
+  body {
+    color: blue
+  }
 
   
 }
@@ -95,10 +98,17 @@ Therefore, we want our media queries in descending order, so that the most recen
 
 @media (max-width: 900px) {
 /* Set the font-size to 45% */
+  html {
+    font-size: 45%;
+}
 
 }
 
 @media (max-width: 600px) {
+  html {
+    background-image: linear-gradient(red, purple);
+
+}
   /* For the colorful background, look up setting a background-image to a linear gradient in css */
 
 }
