@@ -81,27 +81,40 @@ var characterTwoLocation = "Oakland, CA";
 
 // make a variable called characterTwoRent and assign it to be the number 4000.00
 
+var characterTwoRent = 4000.00;
 
 // make a variable called characterTwoSalary and assign it to be the number 90000.00
 
+var characterTwoSalary = 90000.00;
 
 // make a variable called characterTwoExpenses and assign it to be the number 500.00
 
+var characterTwoExpenses = 500.00;
 
 // make a variable called `characterTwoYearlyRent` and assign it to be 12 times `characterTwoRent`
 
+var characterTwoYearlyRent = characterTwoRent * 12;
 
 // make a variable called `characterTwoYearlyExpenses` and assign it to be 12 times `characterTwoExpenses`
 
+var characterTwoYearlyExpenses = characterTwoExpenses * 12;
 
 // make a variable called `characterTwoYearlySavings` and assign it to be what remains of character two's salary after removing both the yearly rent and the yearly expenses
 
+var characterTwoYearlySavings = characterTwoSalary - (characterTwoYearlyExpenses + characterTwoYearlyRent);
 
 
 // Conditionals
 
 // Create an if statement to check if `characterOneName` is "Mr. Farley"
 
+if (characterOneName === "Mr. Farley") {
+    console.log("hello Mr. Farley");
+} else if (characterOneName === "Ms. Farley") {
+    console.log("hello Ms. Farley");
+} else {
+    console.log("Hello stranger");
+}
 
     // If it does, console log "hello Mr. Farley"
 
@@ -128,7 +141,11 @@ var characterTwoLocation = "Oakland, CA";
     
 // Else, console log `characterTwoName` prepended to the string " is older"
 
-
+if (characterOneAge > characterTwoAge) {
+    console.log(characterOneName + " is older");
+} else {
+    console.log(characterTwoName + " is older");
+}
 
 
 // Create an if statement to check if `characterOneLocation` is equal to "San Francisco" and if `characterTwoLocation` is equal to "New York"
