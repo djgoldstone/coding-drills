@@ -1,22 +1,29 @@
 // define a function "fun" that console logs "Functions are FUN!"
 
-
+var fun = () => {
+    console.log("Functions are FUN!");
+}
 
 // before moving on, open index.html and see what console logs have been made.
 // why doesn't "Functions are FUN! appear yet?"
 /*
 
 Your Answer here
-
+Because the function was declared, but not called.  Therefore although the function is defined it was never executed.
 */
 
 
 // define a function "thirtySeven" that console logs the sum of 18 and 19
 
+var thirtySeven = () => {
+    console.log(18 + 19);
+}
 
 
 // call two functions you've defined so far
 
+fun();
+thirtySeven();
 
 // define a function "log" that takes in an argument and console logs that argument
 
