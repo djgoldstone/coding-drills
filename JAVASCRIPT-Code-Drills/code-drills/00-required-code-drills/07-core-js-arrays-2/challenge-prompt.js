@@ -175,25 +175,42 @@ var twoDimArray = [
 console.log("     first array      ");
 // iterate through the first array inside twoDimArray and console log all the numbers less than 25
 
+for (var i = 0; i < twoDimArray.length; i++) {
+  if (twoDimArray[0][i] < 25) {
+    console.log(twoDimArray[0][i]);
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     second array      ");
 // iterate through the second array inside twoDimArray and console log all the numbers less than 25
 
-
+for (var i = 0; i < twoDimArray.length; i++) {
+  if (twoDimArray[1][i] < 25) {
+    console.log(twoDimArray[1][i]);
+  }
+}
 
 // another seperator for your convenience
 console.log("     third array      ");
 // iterate through the third array inside twoDimArray and console log all the numbers less than 25
 
-
+for (var i = 0; i < twoDimArray.length; i++) {
+  if (twoDimArray[2][i] < 25) {
+    console.log(twoDimArray[2][i]);
+  }
+}
 
 // another seperator for your convenience
 console.log("     fourth array      ");
 // iterate through the fourth array inside twoDimArray and console log all the numbers less than 25
 
-
+for (var i = 0; i < twoDimArray.length; i++) {
+  if (twoDimArray[3][i] < 25) {
+    console.log(twoDimArray[3][i]);
+  }
+}
 
 // another seperator for your convenience
 console.log("     fifth array      ");
