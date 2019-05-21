@@ -129,9 +129,17 @@ console.log(counter);
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
 
+var counter = 0;
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i][0] === "P") {
+    counter += 1;
+  }
+}
+console.log(counter);
 
 
 // create a new empty array named uniqueFruits
+
 
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
