@@ -89,17 +89,25 @@ userPopUp();
 // define a function "userName" that prompts the user for their name and then 
 // uses your "log" function to display the response
 
-
+var userName = () => {
+    var user = prompt("What is your username?");
+    log(user);
+}
 
 // call your "userName" function
 
+userName();
 
 // define a function "favoriteFruit" that prompts the user for their favorite fruit
 // and the creates an alert that displays the response
 
+var favoriteFruit = () => {
+    var favFruit = prompt("What's your favorite fruit?");
+    alert(favFruit);
+}
 
 
 // call your "favoriteFruit" function
 
-
+favoriteFruit();
 
