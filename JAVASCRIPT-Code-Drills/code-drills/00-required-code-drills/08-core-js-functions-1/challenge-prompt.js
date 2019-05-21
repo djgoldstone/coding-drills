@@ -47,14 +47,14 @@ hello();
 var popUp = () => {
     alert("This is an alert.");
 }
-popUp();
+// popUp();
 
 // define a function "noPopUp" that creates an alert that says "Okay, you won't get a pop up."
 
 var noPopUp = () => {
     alert("Okay, you won't get a pop up.")
 }
-noPopUp();
+// noPopUp();
 
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
 // and uses your "log" function to display the response
@@ -67,15 +67,24 @@ var goodDay = () => {
 
 // call your "goodDay" function
 
-goodDay();
+// goodDay();
 
 // define a function "userPopUp" that creates a confirm dialogue asking the user if they would like a popup
 // if they answer yes, call upon your "popUp" function; otherwise, call upon your "noPopUp" function
 
-
+var userPopUp = () => {
+    var response = confirm("Would you like a pop up?"); 
+        if (response === true) {
+            popUp();
+        } else {
+            noPopUp();
+        }
+    
+}
 
 // call your "userPopUp" function
 
+userPopUp();
 
 // define a function "userName" that prompts the user for their name and then 
 // uses your "log" function to display the response
