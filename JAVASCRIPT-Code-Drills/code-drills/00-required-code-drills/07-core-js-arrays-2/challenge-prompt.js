@@ -216,18 +216,34 @@ for (var i = 0; i < twoDimArray.length; i++) {
 console.log("     fifth array      ");
 // iterate through the fifth array inside twoDimArray and console log all the numbers less than 25
 
-
+for (var i = 0; i < twoDimArray.length; i++) {
+  if (twoDimArray[4][i] < 25) {
+    console.log(twoDimArray[4][i]);
+  }
+}
 
 // another seperator for your convenience
 console.log("     odd numbers      ");
 // iterate through twoDimArray and the arrays inside of it and console log all the odd numbers
 
-
+for (var i = 0; i < twoDimArray.length; i++) {
+  for (var x = 0; x < twoDimArray[i][x]; x++) {
+    if ((twoDimArray[i][x] % 2) !== 0) {
+      console.log(twoDimArray[i][x]);
+    }
+  }
+}
 
 // another seperator for your convenience
 console.log("     sum of multiples of 3      ");
 // iterate through twoDimArray and the arrays inside of it and 
 // console log the sum of all the numbers that are a multiple of 3
-
-
-
+var sum = 0;
+for (var i = 0; i < twoDimArray.length; i++) {
+  for (var x = 0; x < twoDimArray[i][x]; x++) {
+    if ((twoDimArray[i][x] % 3) === 0) {
+      sum += twoDimArray[i][x];
+    }
+  }
+}
+console.log(sum);
