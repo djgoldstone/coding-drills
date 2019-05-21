@@ -54,7 +54,7 @@ var popUp = () => {
 var noPopUp = () => {
     alert("Okay, you won't get a pop up.")
 }
-// noPopUp();
+noPopUp();
 
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
 // and uses your "log" function to display the response
@@ -67,7 +67,7 @@ var goodDay = () => {
 
 // call your "goodDay" function
 
-// goodDay();
+goodDay();
 
 // define a function "userPopUp" that creates a confirm dialogue asking the user if they would like a popup
 // if they answer yes, call upon your "popUp" function; otherwise, call upon your "noPopUp" function
