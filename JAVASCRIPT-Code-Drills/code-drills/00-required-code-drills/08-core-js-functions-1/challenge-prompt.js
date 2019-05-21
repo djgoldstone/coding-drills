@@ -27,11 +27,16 @@ thirtySeven();
 
 // define a function "log" that takes in an argument and console logs that argument
 
-
+var log = (x) => {
+    console.log(x);
+}
 
 // define a function "hello" that calls on the "log" function to console log "Hello World"
 
-
+var hello = () => {
+    log("Hello World");
+}
+hello();
 
 // call your "hello" function
 
