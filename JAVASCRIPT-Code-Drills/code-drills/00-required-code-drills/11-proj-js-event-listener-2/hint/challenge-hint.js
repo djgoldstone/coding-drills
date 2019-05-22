@@ -15,6 +15,9 @@ document.onkeyup = function(input) {
   if (alphabet.includes(userKey)) {
     document.getElementById("user-key").textContent = userKey;
     userHistory.push(userKey);
+    document.getElementById("user-history").textContent = userHistory;
+  } else {
+    
   }
 }
 
