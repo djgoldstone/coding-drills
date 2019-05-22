@@ -560,13 +560,17 @@ console.log(dex, dexLab);
 //======================== QUESTION 5 ==========================
 //QUESTION: Who are the creators of Stranger Things (drama)?
 //ANSWER: 
-console.log(); 
+var creator1 = shows.genre.drama.strangerThings.creators[0];
+var creator2 = shows.genre.drama.strangerThings.creators[1];
+var creators = creator1 + " " + creator2;
+console.log(creators); 
 //==============================================================
 
 //======================== QUESTION 6 ==========================
 //QUESTION: Who hosts the Daily Show (talk)?
-//ANSWER: 
-console.log(); 
+//ANSWER:
+var dailyHost = shows.genre.talk.theDailyShow.host; 
+console.log(dailyHost); 
 //==============================================================
 
 //======================== QUESTION 7 ==========================
@@ -576,6 +580,10 @@ console.log();
 // for() {
 //   console.log(); 
 // }
+var viewHosts = shows.genre.talk.theView.host;
+for(var i=0;i<viewHosts.length;i++) {
+  console.log(viewHosts[i]);
+}
 
 //==============================================================
 
