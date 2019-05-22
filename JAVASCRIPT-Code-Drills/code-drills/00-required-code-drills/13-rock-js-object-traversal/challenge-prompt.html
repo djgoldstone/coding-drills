@@ -530,26 +530,31 @@ console.log(shows);
 //======================== QUESTION 1 ==========================
 //QUESTION: Who is the actor that plays Squidward in Spongebob (kids)?
 //ANSWER: 
-console.log();
+var squidward = shows.genre.kids.spongeBob.cast[0].actor;
+console.log(squidward);
 //==============================================================
 
 //======================== QUESTION 2 ==========================
 //QUESTION: Patrick Warburton plays Joe Swanson in Family Guy (comedy). What is the link to his imdb page?
 //ANSWER: 
-console.log();
+var pWartonIMDB = shows.genre.comedy.familyGuy.cast[4].imdb;
+console.log(pWartonIMDB);
 //==============================================================
 
 //======================== QUESTION 3 ==========================
 //QUESTION: Is the Walking Dead still running?
 //ANSWER: 
-console.log(); 
+var deadRunning = shows.genre.drama.walkingDead.stillRunning;
+console.log(deadRunning); 
 //==============================================================
 
 //======================== QUESTION 4 ==========================
 //QUESTION: Who plays Dexter in Dexter (drama) and who plays Dexter in Dexter's Lab (kids)?
 //HINT: You can console.log two multiple things at once by using a comma like this: console.log(thing1, thing2)
 //ANSWER: 
-console.log(); 
+var dex = shows.genre.drama.dexter.cast[0].actor;
+var dexLab = shows.genre.kids.dextersLab.cast[0].actor;
+console.log(dex, dexLab); 
 //==============================================================
 
 //======================== QUESTION 5 ==========================
@@ -586,6 +591,7 @@ console.log();
 //======================== QUESTION 9 ==========================
 //QUESTION: Who does Will Arnett play in Arrested Development (comedy)
 //ANSWER: 
+
 console.log(); 
 //==============================================================
 
