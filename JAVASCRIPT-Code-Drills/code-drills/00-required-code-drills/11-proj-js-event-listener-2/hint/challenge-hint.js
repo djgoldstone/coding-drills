@@ -1,6 +1,7 @@
 // declare a variable for the array we're storing the history of user key presses 
 // into and assign it to an empty array
 
+var history = [];
 
 // declare a variable that is a string of all 26 lowercase letters in the english alphabet
 // we can use a string in this situation because we're only checking against individual characters
