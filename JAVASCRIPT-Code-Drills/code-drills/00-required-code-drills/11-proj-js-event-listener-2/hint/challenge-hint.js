@@ -17,7 +17,7 @@ document.onkeyup = function(input) {
     userHistory.push(userKey);
     document.getElementById("user-history").textContent = userHistory;
   } else {
-    
+    document.getElementById("user-key").textContent = "Please press a key within the alphabet!";
   }
 }
 
