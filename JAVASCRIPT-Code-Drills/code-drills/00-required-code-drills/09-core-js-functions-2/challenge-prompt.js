@@ -58,6 +58,13 @@ console.log(returnSum(5, 7));
 // define a function that takes in 3 arguments and finds the sum of those 3 numbers
 
 
+var threeSums = (x,y,z) => {
+    var twoSum = returnSum(x,y);
+    var gavinNewSum = returnSum(twoSum,z);
+    return gavinNewSum;
+}
+var results = threeSums(1,2,3);
+console.log(results);
 
 
 
