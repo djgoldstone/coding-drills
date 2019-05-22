@@ -1,7 +1,11 @@
 // declare the variable we're storing the confirm dialogue in
+var dialogue;
 
 
 // create a key press listener
+document.onkeyup = function(input) {
+  dialogue = input.key.toLowerCase();
+}
 
 
   // store the key the user pressed into a variable so we can 

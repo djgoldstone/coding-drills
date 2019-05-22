@@ -2,15 +2,11 @@
 // appends " arglebargle" to the end of it, and returns the result
 
 
-// var warble = (str) => {
-//     var newStr = str + " arglebargle";
-//     return newStr;
-// }
+var warble = (str) => {
+    var newStr = str + " arglebargle";
+    return newStr;
+}
 
-function warble(str) {
-    var result = str + " arglebargle";
-    return result;
-  }
 
 
 // console log the result of calling your "warble" function with the argument "hello"
@@ -80,21 +76,14 @@ console.log(results);
 // saves the result of calling your "warble" function with that argument,
 // concatenates the two results together and returns that string
 
-// var danceParty = (str) => {
-//     alert("dance!");
-//     var wibbleStr = wibble(str);
-//     var warbleStr = warble(str);
-//     var combStr =  wibbleStr + " " + warbleStr;
-//     return combStr;
-// }
-
-function danceParty(str) {
+var danceParty = (str) => {
     alert("dance!");
-    var result1 = wibble(str);
-    var result2 = warble(str);
-    var returnValue = result1 + " " + result2;
-    return returnValue;
-  }
+    var wibbleStr = wibble(str);
+    var warbleStr = warble(str);
+    var combStr =  wibbleStr + " " + warbleStr;
+    return combStr;
+}
+
 
 
 
