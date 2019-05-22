@@ -2,6 +2,7 @@
 // into and assign it to an empty array
 
 var history = [];
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 // declare a variable that is a string of all 26 lowercase letters in the english alphabet
 // we can use a string in this situation because we're only checking against individual characters
@@ -9,6 +10,13 @@ var history = [];
 
 
 // create a key press listener
+document.onkeyup = function(input) {
+  var userKey = input.key.toLowerCase();
+  if (alphabet.includes(userKey)) {
+    document.getElementById("user-key").textContent = userKey;
+    userHistory.push(userKey);
+  }
+}
 
 
   // store the key the user pressed into a variable and
