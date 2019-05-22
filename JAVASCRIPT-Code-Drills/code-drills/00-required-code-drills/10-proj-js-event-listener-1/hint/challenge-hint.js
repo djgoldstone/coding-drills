@@ -5,17 +5,14 @@ var dialogue;
 // create a key press listener
 document.onkeyup = function(input) {
   dialogue = input.key.toLowerCase();
-}
-
-
-  // store the key the user pressed into a variable so we can 
+// store the key the user pressed into a variable so we can 
   // refer to it easier in this function and
   // change it to lower case to make our logic not case sensitive
 
-
+  console.log(dialogue);
   // console log the key that the user pressed
 
-
+  
   // check whether the user pressed the "h" key
 
     // create a confirm dialogue when they do and store the response from that
@@ -26,3 +23,10 @@ document.onkeyup = function(input) {
   // check whether the user pressed the "k" key
     // check whether the user had answered true to the previous confirm dialogue
     // display the corresponding alert dialogue
+
+
+
+}
+
+
+  
