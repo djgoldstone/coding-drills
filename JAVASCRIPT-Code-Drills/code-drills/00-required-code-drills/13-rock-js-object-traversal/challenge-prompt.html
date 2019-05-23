@@ -594,87 +594,107 @@ for(var i=0;i<viewHosts.length;i++) {
 // for() {
 //   console.log(); 
 // }
+var impracShows = shows.genre.comedy.impracticalJokers.cast;
+for (var i = 0; i <impracShows.length; i++){
+  console.log(impracShows[i].showName);
+}
+
+
 //==============================================================
 
 //======================== QUESTION 9 ==========================
 //QUESTION: Who does Will Arnett play in Arrested Development (comedy)
 //ANSWER: 
 
-console.log(); 
+var willArnett = shows.genre.comedy.arrestedDevelopment.cast[2].character;
+console.log(willArnett);
+
+
 //==============================================================
 
 //======================== QUESTION 10 ==========================
 //QUESTION: Who plays Yami Yugi in Yu-Gi-Oh (kids)?
 //ANSWER: 
-console.log(); 
+var yami = shows.genre.kids.yuGiOh.cast[0].actor;
+console.log(yami); 
 //==============================================================
 
 //======================== QUESTION 11 ==========================
 //QUESTION: How many seasons did the Office (comedy) run?
 //ANSWER: 
-console.log(); 
+var offSeasons = shows.genre.comedy.theOffice.numSeasons;
+console.log(offSeasons); 
 //==============================================================
 
 //======================== QUESTION 12 ==========================
 //QUESTION: Who are the main characters of the Office (comedy) (not the actors, but the actual character names)?
 //ANSWER: 
-// for() {
-//   console.log(); 
-// }
+var mainChars = shows.genre.comedy.theOffice.cast;
+for(var i = 0; i <mainChars.length; i++) {
+  console.log(mainChars[i].character); 
+}
 //==============================================================
 
 //======================== QUESTION 13 ==========================
 //QUESTION: List the characters in Teen Titans (kids)
 //ANSWER: 
-// for() {
-//   console.log(); 
-// }
+var teenChars = shows.genre.kids.teenTitans.cast;
+for(var i = 0; i < teenChars.length; i++) {
+  console.log(teenChars[i].character); 
+}
 //==============================================================
 
 //======================== QUESTION 14 ==========================
 //QUESTION: What is the link to the IMDB page for the actor who plays Mr. Krabs (Spongebob, kids)?
 //ANSWER: 
-console.log(); 
+var imdbLink = shows.genre.kids.spongeBob.cast[1].imdb;
+console.log(imdbLink); 
 //==============================================================
 
 //======================== QUESTION 15 ==========================
 //QUESTION: Who plays Negan in The Walking Dead?
 //ANSWER: 
-console.log(); 
+var neeganActor = shows.genre.drama.walkingDead.cast[2].actor;
+console.log(neeganActor); 
 //==============================================================
 
 //======================== QUESTION 16 ==========================
 //QUESTION: List the main cast of Dexter (drama) (the actors, not the characters)
 //ANSWER: 
-// for() {
-//   console.log(); 
-// }
+var mainCast = shows.genre.drama.dexter.cast;
+for(var i = 0; i < mainCast.length; i++) {
+  console.log(mainCast[i].actor); 
+}
 //==============================================================
 
 //======================== QUESTION 17 ==========================
 //QUESTION: Is Game of Thrones(drama) still running?
 //ANSWER: 
-console.log(); 
+var gameRunning = shows.genre.drama.gameOfThrones.stillRunning;
+console.log(gameRunning); 
 //==============================================================
 
 //======================== QUESTION 18 ==========================
 //QUESTION: Who does Peter Dinklage play in Game of Thrones (drama)?
 //ANSWER: 
-console.log(); 
+var theDink = shows.genre.drama.gameOfThrones.cast[1].actor;
+console.log(theDink); 
 //==============================================================
 
 //======================== QUESTION 19 ==========================
 //QUESTION: List the American Idol Judges
 //ANSWER: 
-// for() {
-//   console.log(); 
-// }
+var judges = shows.genre.reality.americanIdol.judges;
+for(var i = 0; i < judges.length; i++) {
+  console.log(judges[i]); 
+}
 //==============================================================
 
 //======================== QUESTION 20 ==========================
 //QUESTION: Who plays Dustin in Stanger Things (drama)?
 //ANSWER: 
-console.log(); 
+var strangerDustin = shows.genre.drama.strangerThings.cast[3].actor;
+console.log(strangerDustin); 
 //==============================================================
 
 
