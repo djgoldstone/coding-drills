@@ -3,18 +3,29 @@ $(document).ready(function () {
     // Section 1 creating the array and variables
   
     // 1.1 create a variable called letters with an array of every letter in alphabet (A-Z) as a string
+    var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
     
 
     // 1.2 create a variable called body and have it equals the jquery selector of body
+    var body = $("body");
 
   
     // 1.3 create a variable called btns and assign the result of calling the "find" method on the body variable to find the element with an id of "buttons"
+    var buttons = body.find("#buttons");
 
   
     // Section 2 : DYNAMICALLY the text on the button
     // =================================================================================
   
     // 2.1 Create a for-loop that iterate through the variable letters.
+    for (i=0;i<letters.length;i++) {
+      var textButton = $("<button>");
+      textButton.addClass("letter-button");
+      textButton.attr("data-letter",letters[i]);
+      textButton.text(letters[i]);
+      buttons.append(textButton);
+
+    };
 
   
       // 2.2 Create a variable named "textButton" equal to a jquery selctor of a string <button>
@@ -38,6 +49,13 @@ $(document).ready(function () {
     // =================================================================================
   
     // 3.1 Create an "on-click" event attached to the ".letter-button" class.
+    $(".letter-button").on("click", function() {
+      var textDiv = $("<div>");
+      textDiv.addClass("letter");
+      textDiv.text($(this).attr("data-letter"));
+      body.find("#display").append(textDiv);
+
+    });
 
   
       // 3.2 Create a variable called textDiv and and set it equal to jquery selector string of <div>.

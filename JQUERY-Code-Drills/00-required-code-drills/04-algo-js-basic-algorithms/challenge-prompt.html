@@ -19,6 +19,11 @@
     // If the number is 42, console.log(true). If it isn't 42, console.log(false)
     function numberGuess(int) {
     // --------- code starts --------------
+    if (int === 42) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
 
 
 
@@ -42,6 +47,15 @@
 
     function findSmallest(arr) {
     // --------- code starts --------------
+    var firstNum = arr[0];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] < firstNum) {
+        firstNum = arr[i];
+        console.log(firstNum);
+      }
+      
+    }
+    
 
 
 
@@ -60,13 +74,20 @@
 
     function findShortest(arr){
     // --------- code starts --------------
+    var shortestVal = arr[0];
+    for (var i = 0; i < arr.length - 1; i++) {
+      if (arr[i].length < arr[i+1].length && arr[i].length < shortestVal.length) {
+        shortestVal = arr[i];
+      }
+    }
+    console.log(shortestVal);
 
 
 
 
 
     // --------- code ends --------------
-    }
+    };
 
     // This code is to help you test your function
     var strings = ["hey there", "yo", "a", "hello", "what up", "hello, my name is farley", "howdy"];
@@ -81,6 +102,13 @@
 
     function filterArray(high, low, arr){
     // --------- code starts --------------
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > low && arr[i] < high) {
+        newArr.push(arr[i]);
+      }
+    }
+    console.log(newArr);
 
 
 
@@ -94,7 +122,7 @@
     var up = 20;
     var arr = [2,5,99,15,23,18,11,21];
 
-    innerBound(up, down, arr);
+    filterArray(up, down, arr);
 
 
   </script>
