@@ -29,19 +29,22 @@ var name = "Not California";
 
 console.log("==================== Question 01 ====================");
 // What is the value of `this.name`?
-// 
+// `this.name` = "Not California"
+console.log(this.name);
 
 
 
 console.log("==================== Question 02 ====================");
 // What is the value of california.name?
-//
+// `california.name` = "California"
+console.log(california.name);
 
 
 
 console.log("==================== Question 03 ====================");
 // What does `california.getName()` return?
-//
+// `california.getName();` = "California"
+california.getName();
 
 
 
@@ -54,7 +57,8 @@ function stateCall(callback) {
 
   console.log("==================== Question 04 ====================");
   // What is the value of `location`?
-  //
+  // `location` = "California"
+  console.log(location);
 
 }
 
@@ -65,6 +69,9 @@ console.log("==================== Question 05 ====================");
 // when invoked. Do not explicitly refer to `california` INSIDE your method
 
 // ================ Your code here ================
+california.getCapital = function() {
+  return this.capital;
+};
 
 
 
@@ -73,7 +80,7 @@ console.log("==================== Question 05 ====================");
 // ============== End of your code area ===========
 
 // console log the return value of your method here
-
+console.log(california.getCapital());
 
 // end of console log area
 
@@ -81,8 +88,8 @@ console.log("==================== Question 05 ====================");
 
 console.log("==================== Question 06 ====================");
 // what does `california.sanfrancisco.getName()` return?
-//
-
+// `california.sanfrancisco.getName()` = "San Francisco"
+console.log(california.sanfrancisco.getName());
 
 
 
@@ -95,7 +102,8 @@ function cityCall(callback) {
 
   console.log("==================== Question 07 ====================");
   // What is the value of `location`?
-  //
+  // `location` = "Not California"
+  console.log(location);
 
 }
 
@@ -107,7 +115,8 @@ function getName() {
 
 console.log("==================== Question 08 ====================");
 // What does `getName()` return?
-// 
+// `getName()` = "California"
+console.log(getName());
 
 
 
@@ -132,7 +141,9 @@ function count() {
 
 console.log("==================== Question 09 ====================");
 // If we execute `count()` what does it console log out?
-//
+// `count()` = "Odd 1"
+console.log(count());
+
 
 
 
@@ -143,7 +154,8 @@ function countWrapper() {
 
 console.log("==================== Question 10 ====================");
 // What is the return value of `countWrapper()`
-//
+// `countWrapper` = "4"
+console.log(countWrapper());
 
 
 
