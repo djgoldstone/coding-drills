@@ -140,9 +140,13 @@ console.log("==================== Question 12 ====================");
 var letters = ['h', 'c', 'i', 'r'];
 
 // reverse the order of the `letters` array
+letters.reverse();
+console.log(letters);
 
 
 // convert the `letters` array into a string and console log it
+var newStr = letters.join("");
+console.log(newStr);
 
 
 
@@ -152,12 +156,19 @@ var famousToms = ["Tom Cruise", "Tom Hanks", "Tom Keel"];
 
 // write code below to replace "Tom Hanks" with "Tom Petty" 
 // in the `famousToms` variable
+famousToms.splice(1, 1, "Tom Petty");
+
 
 
 // declare a variable named `nums` and set it to an empty array
+var nums = [];
 
 
 // on the next line write code to add numbers 1 to 1000 into the nums array
+for (var i = 1; i < 1001; i++) {
+    nums.push(i)
+}
+console.log(nums);
 
 
 
@@ -165,28 +176,39 @@ console.log("==================== Question 14 ====================");
 
 // write a function named `doubleLength` that takes in a string and returns
 // the length of that string multiplied by 2
+var doubleLength = (str) => {
+    return str.length *2;
+}
 
 
 // call the `doubleLength` function with a value of "allen" and console log 
 // the return value
 
+console.log(doubleLength("allen"));
 
 console.log("==================== Question 15 ====================");
 
 // make a variable named `nums` and set it to be an array with the 
 // numbers 1002 and 1001 in it.
+var nums = [1002,1001];
 
 
 // on the next line write code to push the number from 1000 down to 1 
 // into the nums array. The final array should have the numbers from 1002
 // to 1 in descending order
-
+for (var i = 1000; i > 0; i--) {
+    nums.push(i);
+}
+console.log(nums);
 
 
 console.log("==================== Question 16 ====================");
 
 // write a function named arrayMerge that takes in an array as an argument
 // and returns a string of all the elements combined
+var arrayMerge = (arr) => {
+    return arr.join("");
+}
 
 
 
@@ -194,6 +216,7 @@ console.log("==================== Question 16 ====================");
 var myArray = [3,65,"hello",2,7,true,23,"yes"];
 
 // Test your function with `myArray` as the argument
+console.log(arrayMerge(myArray));
 
 
 
@@ -201,12 +224,20 @@ console.log("==================== Question 17 ====================");
 
 // write a function named `arrSum` that takes in an array and returns 
 // the sum of all the elements of the array
-
+var sum = 0;
+var arrSum = (arr) => {
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        
+    }
+    return sum;
+}
 
 
 myArray = [3,65,24,12,7,81,23,39];
 
 // Test your function with `myArray` as the argument
+console.log(arrSum(myArray));
 
 
 
@@ -216,19 +247,31 @@ console.log("==================== Question 18 ====================");
 // name is "Tyler"
 // waterBottle is true 
 // whereLunchToday is "Tyler's house"
+var tyler = {
+    name: "Tyler",
+    watterBottle: true,
+    whereLunchToday: "Tyler's house",
+}
 
 
 // add a key of "is a bro" to the `tyler` object and set it to true
+tyler["is a bro"] = true;
 
 
 // add a key of "favBand" to the `tyler` object and set it to "Iron Maiden"
+tyler.favBand = "Iron Maiden";
 
 
 // update the "waterBottle" key in the `tyler` object to be false
+tyler.watterBottle = false;
 
 
 // then after making the `tyler` object, loop over the object and 
 // create an alert with the key and the value seperated by a space
+for (var key in tyler) {
+    alert(key + " " + tyler[key]);
+}
+
 
 
 
@@ -242,7 +285,7 @@ function returnSum1(a,b){ return a + b; }
 var part1 = returnSum1();
 
 // What is the value of `part1`?
-//
+// 11 (NaN)
 
 
 
@@ -254,7 +297,7 @@ function returnSum2(){ var a = 9; return a + b; }
 var part2 = returnSum2();
 
 // What is the value of `part2`?
-//
+// 15
 
 
 
@@ -266,7 +309,7 @@ function returnSum3(){ return a + b; var a = 9; }
 var part3 = returnSum3();
 
 // What is the value of `part3`?
-//
+// 15 (NaN)
 
 
 
@@ -278,7 +321,7 @@ function returnSum4(){ var a = "hi"; return a + b; }
 var part4 = returnSum4();
 
 // What is the value of `part4`?
-//
+//"hi6"
 
 
 
@@ -286,5 +329,6 @@ var num = 0;
 for (var i=9; i>=0; i--){ num += i; }
 
 // What is the value of `num`?
-//
+// 9 (45)
+console.log(num);
 
