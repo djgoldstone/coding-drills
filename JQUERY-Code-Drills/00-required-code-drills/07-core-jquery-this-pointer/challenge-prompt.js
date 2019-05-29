@@ -19,7 +19,14 @@ function populateButtons() {
   resetButton.text("Reset");
   resetButton.attr("data", "Reset");
 
-  $("buttons-area").append(helloButton, worldButton, resetButton);
+  var userButton = $("<button>");
+  userButton.text("User");
+  userButton.attr("id", "user-button");
+  userButton.attr("data", "");
+
+  $("#buttons-area").append(helloButton, worldButton, resetButton);
+  $("#user-button-area").append(userButton);
+
 
 
 
@@ -44,6 +51,10 @@ $(function () {
   // Refer to step 4 on the README
   document.onkeyup = function(event) {
     // Your code goes here
+
+    var userKey = $("#user-button").attr("data");
+    userKey += event.key;
+    $("#user-button").attr("data", userKey);
 
 
 
