@@ -11,7 +11,16 @@ function populateButtons() {
   helloButton.text("Hello");
   helloButton.attr("data", "Hello");
 
-  
+  var worldButton = $("<button>");
+  worldButton.text("World");
+  worldButton.attr("data", "World");
+
+  var resetButton = $("<button>");
+  resetButton.text("Reset");
+  resetButton.attr("data", "Reset");
+
+  $("buttons-area").append(helloButton, worldButton, resetButton);
+
 
 
 
