@@ -43,10 +43,20 @@ animal = "the giraffe says sup";
 
 // using `indexOf`, console log `true` if the string "says" is in the `animal` 
 // variable and `false` if it's not
+if (animal.indexOf("says" > 0)) {
+    console.log(true);
+} else {
+    console.log(false);
+}
 
 
 // using `indexOf`, console.log `true` if the string "zebra" is in the `animal` 
 // variable and `false` if it's not.
+if (animal.indexOf("zebra") > 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
 
 
 
