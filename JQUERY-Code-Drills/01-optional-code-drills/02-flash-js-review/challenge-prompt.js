@@ -1,24 +1,28 @@
 console.log("==================== Question 01 ====================");
 
 // make a variable named `word` and set it to an empty string
+var word = "";
 
 
 // append the string "hello" to `word`
-
+word += "hello";
 
 // append a space to `word`
-
+word += " ";
 
 // append the string "world" to `word`
-
+word += "world";
 
 // console.log the `word` variable
-
+console.log(word);
 
 
 console.log("==================== Question 02 ====================");
 
 // iterate through the `word` variable and console.log each character inside of it
+for (var i = 0; i < word.length; i++) {
+    console.log(word[i]);
+}
 
 
 
@@ -29,6 +33,7 @@ var animal = "the fox says";
 // use the `indexOf` method to console log the index of the letter "x" 
 // in the `animal` variable. Do not hard code in the number you want to console
 // log.
+console.log(animal.indexOf("x"));
 
 
 
