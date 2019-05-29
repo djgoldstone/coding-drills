@@ -63,14 +63,14 @@ if (animal.indexOf("zebra") > 0) {
 console.log("==================== Question 05 ====================");
 
 // what is the index of the first character of a string?
-//
-
+// the index of the first character of a string is [0]
 
 console.log("==================== Question 06 ====================");
 
 var word = "fiesta";
 
 // console log the "e" in `word` without explicitly using the string "e"
+console.log(word[2]);
 
 
 
@@ -79,7 +79,8 @@ console.log("==================== Question 07 ====================");
 var greeting = "apple banana chicken";
 greeting = greeting.replace(/a/g, 'g');
 
-// what is the value of the variable greeting?
+// what is the value of the variable greeting? gretting = "gpple bgngng chicken"
+console.log(greeting);
 
 
 
@@ -88,6 +89,7 @@ console.log("==================== Question 08 ====================");
 word = "apple";
 
 // console.log "ppl" from `word` without using the letters "ppl"
+console.log(word.slice(1,-1));
 
 // HINT: You are looking for a slice of this string, not the whole pie
 
