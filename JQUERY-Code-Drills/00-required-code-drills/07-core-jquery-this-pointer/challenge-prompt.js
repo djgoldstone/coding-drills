@@ -7,6 +7,12 @@
 // We will be defining this function right now and invoking it later
 function populateButtons() {
   // Your code goes here
+  var helloButton = $("<button>");
+  helloButton.text("Hello");
+  helloButton.attr("data", "Hello");
+
+  
+
 
 
 
