@@ -70,7 +70,14 @@ $(function () {
   // Refer to step 3 on the README
   $(document).on("click", "button", function (event) {
     // Your code goes here
-
+    if ($(this).attr("data") === "Hello" || $(this).attr("data") === "World") {
+      $("#output").append($(this).attr("data"));
+    } else if ($(this).attr("data") === "Reset") {
+      $("#output").empty();
+    } else {
+      $("#output").text($(this).attr("data"));
+      $(this).attr("data", "");
+    }
 
 
 
