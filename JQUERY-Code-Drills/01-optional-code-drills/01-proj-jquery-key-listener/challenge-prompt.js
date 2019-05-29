@@ -8,7 +8,7 @@ var letterUsed = document.getElementById("lastLetter");
 
 
 // create a variable called LetterUsedArray and have it equal and empty array
-var LetterUsedArray = [];
+var letterUsedArray = [];
 
 
 
@@ -16,17 +16,17 @@ var LetterUsedArray = [];
 // now use the onkey up jquery function and pass it the argument of event
 document.onkeyup = function (event) {
     // now set a variable of userInput equal to the event.key
-    userInput = event.key;
+    var userInput = event.key;
 
     
     // use the userTyped variable and the textContent property equal the userInput
-    
+    userTyped.textContent = userInput;
 
     
     // push the userInput into the letterUsedArray
-
+    letterUsedArray.push(userInput);
     
     // append the userInput followed by a comma to the end of the textContent within letterUsed
-
+    letterUsed.textContent += userInput + ",";
     
 }
