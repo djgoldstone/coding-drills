@@ -101,6 +101,8 @@ word = "the giraffe said hi";
 
 // Capitalize the first letter in the `word` variable 
 // console log your modified `word` variable
+var upperCaseWord = word.charAt(0).toUpperCase() + word.slice(1);
+console.log(upperCaseWord);
 
 
 
@@ -109,25 +111,28 @@ console.log("==================== Question 10 ====================");
 animal = "moose"; 
 
 //write code here to change the center o to z
+animal = animal.slice(0,2) + "z" + animal.slice(3);
+console.log(animal);
 
 
 
 console.log("==================== Question 11 ====================");
 
 // make a variable named `dogs` and initialize it to an empty array
+var dogs = [];
 
 
 // append the string "rover" into the `dogs` array
-
+dogs.push("rover");
 
 // append the string "hunter" into the `dogs` array
-
+dogs.push("hunter");
 
 // append the string "oak" into the `dogs` array
-
+dogs.push("oak");
 
 // console.log out the length of the `dogs` array
-
+console.log(dogs.length);
 
 
 console.log("==================== Question 12 ====================");
