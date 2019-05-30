@@ -15,7 +15,7 @@ function questionTwo () {
   alert("Question 2");
 }
 
-var questionTwo = setTimeout(questionOne, 1000 * 15);
+var questionTwo = setTimeout(questionTwo, 1000 * 15);
 
 
 // Remove the timer you just made for Question 2
