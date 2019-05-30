@@ -16,15 +16,20 @@ var two = setTimeout(log("Question1-2"), 1000 * 6);
 var three = setTimeout(log("Question1-3"), 1000 * 7);
 
 // remove the timers `one`, `two`, and `three`
+clearTimeout(one);
+clearTimeout(two);
+clearTimeout(three);
 
 
 
 console.log("==================== Question 02 ====================");
 // create a timer that logs "Hello" after 17 seconds
+var hello = setTimeout(log("hello"), 1000 * 17);
 
 
 
 // remove the timer you just made
+// clearTimeout(hello);
 
 
 
