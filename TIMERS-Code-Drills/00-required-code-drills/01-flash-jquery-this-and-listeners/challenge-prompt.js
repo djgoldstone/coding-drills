@@ -9,6 +9,7 @@ function createButton(str) {
   var newButton = $("<button>");
   newButton.addClass("btn btn-light p-2 m-2 content-button");
   newButton.text(str);
+  newButton.data("content", str);
   $("#button-area").append(newButton);
 
 
@@ -49,14 +50,14 @@ $(function () {
   // ---------- Your Code Here ----------
   $(document).on("click", ".content-button", displayContent);
 
-  $(document).on("click", ".clear-button", function(event) {
+  $(document).on("click", "#clear-button", function(event) {
     event.preventDefault();
     $("#display-area").empty();
   })
 
   $(document).on("click", "#submit-button", function(event) {
     event.preventDefault();
-    var buttonText = $("user-input").val();
+    var buttonText = $("#user-input").val();
     $("#user-input").val("");
     createButton(buttonText);
   })
