@@ -6,6 +6,11 @@
 // display the string in the display-area when clicked later.
 function createButton(str) {
   // ---------- Your Code Here ----------
+  var newButton = $("<button>");
+  newButton.addClass("btn btn-light p-2 m-2 content-button");
+  newButton.text(str);
+  $("#button-area").append(newButton);
+
 
 
 
