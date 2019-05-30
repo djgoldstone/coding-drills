@@ -30,6 +30,8 @@ function createButton(str) {
 // that was clicked on and append it to the display-area.
 function displayContent(event) {
   // ---------- Your Code Here ----------
+  var text = $(this).data("content");
+  $("#display-area").append(text);
 
 
 
