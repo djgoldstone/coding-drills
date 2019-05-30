@@ -29,7 +29,7 @@ var hello = setTimeout(log("hello"), 1000 * 17);
 
 
 // remove the timer you just made
-// clearTimeout(hello);
+clearTimeout(hello);
 
 
 
