@@ -50,11 +50,15 @@ $(function () {
   $(document).on("click", ".content-button", displayContent);
 
   $(document).on("click", ".clear-button", function(event) {
+    event.preventDefault();
     $("#display-area").empty();
   })
 
   $(document).on("click", "#submit-button", function(event) {
-    
+    event.preventDefault();
+    var buttonText = $("user-input").val();
+    $("#user-input").val("");
+    createButton(buttonText);
   })
 
 
