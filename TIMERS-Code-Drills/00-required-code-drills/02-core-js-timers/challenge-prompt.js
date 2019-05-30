@@ -42,10 +42,15 @@ var questionThree2 = setTimeout(questionThree2, 1000 * 16);
 
 console.log("==================== Question 04 ====================");
 // Remove the timer from Question 3 part 1
+clearTimeout(questionThree1);
 
 
 
 console.log("==================== Question 05 ====================");
 // Create a timer that plays a sound after 11 seconds and console logs "Question 5 Completed!"
+var questionFive = () => {
+    console.log("Question 5 completed!");
+};
+var questionFive = setTimeout(questionFive, 1000 * 11);
 
 
