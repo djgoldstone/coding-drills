@@ -47,6 +47,15 @@ function displayContent(event) {
 // Put your click listeners here.
 $(function () {
   // ---------- Your Code Here ----------
+  $(document).on("click", ".content-button", displayContent);
+
+  $(document).on("click", ".clear-button", function(event) {
+    $("#display-area").empty();
+  })
+
+  $(document).on("click", "#submit-button", function(event) {
+    
+  })
 
 
 
