@@ -113,6 +113,7 @@ var nestedMixedDataTypes = {"array": ["array", {"object": "goal"}]}
 var target;
 // assign `target` the value of "goal" using the `nestedMixedDataTypes` variable
 // 
+target = nestedMixedDataTypes.array[1].object;
 
 
 
@@ -224,6 +225,10 @@ var toyArrayOfObjects = [
 
 function iterateArrObjects(arrOfObj){
   // ---------- Your Code Here ----------
+  for (var i = 0; i < arrOfObj.length;i++) {
+     console.log(arrOfObj[i]["Product"]);
+     console.log(arrOfObj[i]["item"]);
+  }
 
 
 
