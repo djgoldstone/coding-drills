@@ -26,6 +26,9 @@ function returnCustomObject(arr){
 	var obj ={};
   
   // ---------- Your Code Here ----------
+  for (var i = 0; i < arr.length; i++) {
+     
+  }
 
 
 
