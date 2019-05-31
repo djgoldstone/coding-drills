@@ -31,7 +31,9 @@ console.log("==================== Question 01 ====================");
 var nestedArray = [[1,2], ["nested", ["Radio Flyer Wagon", "Chemistry Set", ["Joy Buzzer", "Yo-Yo"]]]];
 var target;
 // assign `target` the value of "Yo-Yo" using the `nestedArray` variable
-// 
+// target = nestedArray[1][1][2][1];
+target = nestedArray[1][1][2][1];
+
 
 
 
@@ -46,7 +48,7 @@ var nestedArray = ["Pop-Up Book", ["Stuffed Mickey Mouse", ["Beach Ball", "Sock 
 var target;
 // assign `target` the value of "Sock Monkey" using the `nestedArray` variable
 // 
-
+target = nestedArray[1][1][1];
 
 
 
@@ -60,6 +62,7 @@ var nestedNumberArray = [3,1,[41,59,265,358,979],32,38,46,[264338,327,9,50,[2,88
 var target;
 // assign `target` the value of 42 using the `nestedNumberArray` variable
 // 
+target = nestedNumberArray[6][4][2];
 
 
 
@@ -74,6 +77,7 @@ var nestedMixedArray = [8,[76,["Bubble Solution"],530,"Slinky","Magic 8 Ball","L
 var target;
 // assign `target` the value of "Legos" using the `nestedMixedArray` variable
 // 
+target = nestedMixedArray[1][5];
 
 
 
@@ -93,6 +97,7 @@ var nestedObject = {"outer": {"innerKey": {"object": {"key": "Value!"}}}}
 var target;
 // assign `target` the value of "Value!" using the `nestedObject` variable
 // 
+target = nestedObject.outer.innerKey.object.key;
 
 
 
