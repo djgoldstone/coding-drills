@@ -114,6 +114,9 @@ function toyArrToObj(arrayOfToys){
   var toyArrayOfObjs = [];
 
   // ---------- Your Code Here ----------
+  for (var i = 0; i < arrayOfToys.length; i++) {
+     toyArrayOfObjs.push({name: arrayOfToys[i]}); 
+  }
 
 
 
@@ -231,6 +234,19 @@ function createCustomObject(objectArr){
 	customToyLineObj = {};
 
   // ---------- Your Code Here ----------
+  for (var i = 0; i < objectArr.length; i++) {
+     if (customToyLineObj[objectArr[i].toyLine]) {
+        customToyLineObj[objectArr[i].toyLine].toyLineToys.push(objectArr[i].title);
+        customToyLineObj[objectArr[i].toyLine].totalToysInToyLine += objectArr[i].stock;
+     } else {
+        customToyLineObj[objectArr[i].toyLine] = {
+           toyLine: objectArr[i].toyLine,
+           toyLineToys: [objectArr[i].title],
+           totalToysInToyLine: objectArr[i].stock,
+
+        };
+     }
+  }
 
 
 
@@ -276,7 +292,16 @@ console.log("==================== Question 05  ====================");
 function areDups(arr){
 
   // ---------- Your Code Here ----------
-
+  var nums = {};
+  
+  for (var i = 0; i < arr.length; i++) {
+     if (nums[arr[i]]) {
+        return true;
+     } else {
+        return nums[arr[i]] = true;
+     }
+  }
+  return false;
 
 
 
