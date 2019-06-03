@@ -293,7 +293,7 @@ function areDups(arr){
 
   // ---------- Your Code Here ----------
   var nums = {};
-  
+
   for (var i = 0; i < arr.length; i++) {
      if (nums[arr[i]]) {
         return true;
@@ -302,6 +302,7 @@ function areDups(arr){
      }
   }
   return false;
+  
 
 
 
