@@ -74,6 +74,14 @@ function greatestFrequency(toyInventory){
   var maxToy, maxNum;
   
   // ---------- Your Code Here ----------
+  maxToy = "";
+  maxNum = 0;
+  for (key in toyInventory) {
+     if (toyInventory[key] > maxNum) {
+        maxNum = toyInventory[key];
+        maxToy = key;
+     }
+  }
 
 
 
