@@ -30,7 +30,7 @@ var q3 = setInterval(function() {$("#question-03").append("3")}, 1000 * 2);
 // ------------------------------------------------------------------
 console.log("==================== Question 04 ====================");
 // Create an interval that empties the "#question-03" element every 6 seconds
-
+var q4 = setInterval(function() {$("#question-03").empty()}, 1000 * 6);
 
 
 // ------------------------------------------------------------------
