@@ -53,10 +53,11 @@ var q5 = setInterval(function() {
 console.log("==================== Question 06 ====================");
 // Create an interval that appends "6" to the div with an id of "question-06"
 // every second
-
+var q6 = setInterval(function() {$("#question-06").append("6")}, 1000 * 1);
 
 
 // Create a timer to clear the interval after 6 seconds
+var q6Clear = setInterval(function() {clearInterval(q6)}, 1000 * 6);
 
 
 
@@ -64,5 +65,8 @@ console.log("==================== Question 06 ====================");
 console.log("==================== Question 07 ====================");
 // create a timer to clear the interval from question 1 after 10 seconds
 
+setTimeout(function() {
+    clearInterval(q1)
+}, 1000 * 10);
 
 
