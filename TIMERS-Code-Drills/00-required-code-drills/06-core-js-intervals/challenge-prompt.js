@@ -37,6 +37,15 @@ var q4 = setInterval(function() {$("#question-03").empty()}, 1000 * 6);
 console.log("==================== Question 05 ====================");
 // Create an interval that appends "5" to the div with an id of "question-05"
 // every second and clear this interval after 5 seconds
+counter = 0;
+var q5 = setInterval(function() {
+    $("#question-05").append("5");
+    counter += 1;
+    if (counter >= 5) {
+        clearInterval(q5)
+    }
+
+}, 1000 * 1);
 
 
 
