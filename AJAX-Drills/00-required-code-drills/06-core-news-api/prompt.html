@@ -72,13 +72,22 @@
 
 
     // STEP 4: Based on your research of this API, assign a value to queryURL you think is appropriate to retrieve the top news stories in the US. 
-    var queryURL = "";
+    var queryURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=c59a9c8c48f24bf29d5a01d053a56a7d";
+    console.log(queryURL);
 
 
     $.ajax({
       url: queryURL, 
       method: "GET"
     }).then(function (response) {
+      console.log(response);
+      console.log(response.articles[0].author);
+      for (var i = 0; i < response.articles.length; i++) {
+        if (!response.articles[i].author) {
+          response.articles[i].author = "Derek Goldstone";
+        }
+        $(".appendMe").append("<div><h3 class='title'>" + response.articles[i].title + "</h3> <p class='author'>" + response.articles[i].author + "</p> <p class='desc'>" + response.articles[i].description + "</p> </div>");
+      }
       
       // STEP 5. This is where we'll render our responses to the DOM. 
       
