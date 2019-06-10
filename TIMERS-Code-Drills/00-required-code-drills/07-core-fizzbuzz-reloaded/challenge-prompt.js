@@ -6,7 +6,11 @@
 function checkWibble(str) {
 
   // ---------- Your Code Here ----------
-
+  if (str.length % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 
 
 
@@ -24,8 +28,17 @@ function checkWibble(str) {
 // and false if it doesn't
 function checkWobble(str) {
 
-  // ---------- Your Code Here ----------
+  // ---------- Your Code Here ---------
+  var vowels = "aeiou";
+  var vowelCounter = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      vowelCounter++;
+    }
+  }
 
+  return (vowelCounter % 2 !== 0);
+  
 
   
 
@@ -47,6 +60,19 @@ function checkWobble(str) {
 function wibbleWobble(arr) {
   
   // ---------- Your Code Here ----------
+  for (var i = 0; i < arr.length; i++) {
+    var wibble = checkWibble(arr[i]);
+    var wobble = checkWobble(arr[i]);
+    
+    if (wibble && wobble) {
+      arr[i] = "WibbleWobble";
+    } else if (wibble) {
+      arr[i] = "wibble";
+    } else if (wobble) {
+      arr[i] = "wobble";
+    }
+  }
+  
 
 
   
