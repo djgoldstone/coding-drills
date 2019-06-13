@@ -10,7 +10,16 @@ console.log("////////////////////////////// QUESTION 3.1 \\\\\\\\\\\\\\\\\\\\\\\
 
 function averageNumbers(nums) {
   // your code here
-
+  var divisor = nums.length;
+  var sum = 0;
+  if (nums.length === 0) {
+    return 0;
+  } else {
+    for (var i = 0; i < nums.length; i++) {
+      sum += nums[i];
+    }
+  }
+  return sum/divisor;
   
 
 
@@ -42,6 +51,11 @@ Given an object, "keysCounter" returns how many properties the given object has.
 */
 function keysCounter(obj) {
   // your code here
+  var counter = 0;
+  for (keys in obj) {
+    counter++;
+  }
+  return counter;
 
   
 

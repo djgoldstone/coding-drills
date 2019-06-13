@@ -17,3 +17,11 @@ What's worse, if he leaves the chicken and fox alone together, the fox will eat 
 Using only the farmer's rickety boat and its rules, help him get across the river with all of his companions.
 
 There is no "trick" answer to this problem
+
+The farmer will have to ferry the chicken across first, the fox will not eat the grain and the chicken will be protected from the fox.
+
+Then the farmer should ferry the fox across and bring the chicken on the boat so they aren't alone together
+
+Drop the chicken off alone and take the grain to the fox.
+
+Pick up the chicken and go back with all his property safely on the other side of the river.

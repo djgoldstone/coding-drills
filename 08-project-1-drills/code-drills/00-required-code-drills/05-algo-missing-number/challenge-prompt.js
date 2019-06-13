@@ -10,6 +10,11 @@ console.log("////////////////////////////// QUESTION 5.1 \\\\\\\\\\\\\\\\\\\\\\\
 
 function missingNumber(arr){
     // =========== code starts here =============
+    var lengthPlus = arr.length + 1;
+    var sum = 0;
+    for (var i = 0; i < sortedArr.length; i++) {
+
+    }
 
     
 

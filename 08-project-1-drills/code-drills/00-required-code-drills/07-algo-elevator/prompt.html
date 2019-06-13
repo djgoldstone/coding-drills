@@ -11,9 +11,22 @@
 
   <script>
     
-    var elevator = "^^^^^vv^v^vv^v^^^vvv^^^^^^v^^v^^^v^^vvv"
+    var elevator = "^^^vv^^^v^^"
+    
     
     function whichFloor(str) {
+      counter = 0;
+      var splitButtons = str.split("");
+      console.log(splitButtons);
+      for (var i = 0; i < splitButtons.length; i++) {
+        if (splitButtons[i] === "^") {
+          counter++;
+        } else if (splitButtons[i] === "v") {
+          counter--;
+        }
+      }
+      return counter;
+
 
     }
 
