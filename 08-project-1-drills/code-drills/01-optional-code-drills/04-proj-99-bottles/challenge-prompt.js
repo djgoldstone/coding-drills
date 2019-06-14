@@ -9,6 +9,22 @@
 //
 // -------------------- Your Code Here --------------------
 
+function display(str) {
+  var displayElement = $("<p>").text(str);
+  $("#output-area").append(displayElement);
+}
+
+function displayBottle(num) {
+  switch(num) {
+    case 1:
+      return "1 bottle";
+    case 0:
+      return "No more bottles";
+    default:
+      return num + " bottles ";
+  }
+}
+
 
 
 
@@ -21,6 +37,14 @@
 // -------------------------------------------------------
 function sing(maxBottles) {
   // -------------------- Your Code Here --------------------
+  if (maxBottles > 0) {
+    for (var i = maxBottles; i > 0; i--) {
+      display(displayBottle(i) + " of beer on the wall, " + displayBottle(i) + " of beer.");display("Take one down, pass it around, " + displayBottle(i-1) + " of beer on the wall!");
+    }
+  }
+    
+  
+  
 
 
   
